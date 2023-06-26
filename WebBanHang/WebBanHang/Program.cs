@@ -1,7 +1,18 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.EntityFrameworkCore;
+using System.Configuration;
+using WebBanHang.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+//Dang ky dbcontext
+builder.Services.AddDbContext<MywebContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("myweb"));
+
+});
 
 var app = builder.Build();
 
@@ -21,12 +32,11 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
+      name: "areas",
+      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+    );
+app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
-app.MapControllerRoute(
-            name: "areas",
-            pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
-          );
 
 app.Run();
