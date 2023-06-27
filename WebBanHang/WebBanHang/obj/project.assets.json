@@ -11486,11 +11486,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\WebBanHang\\WebBanHang\\WebBanHang\\WebBanHang.csproj",
+      "projectUniqueName": "E:\\WebBanHang\\WebBanHang\\WebBanHang\\WebBanHang\\WebBanHang.csproj",
       "projectName": "WebBanHang",
-      "projectPath": "E:\\WebBanHang\\WebBanHang\\WebBanHang\\WebBanHang.csproj",
+      "projectPath": "E:\\WebBanHang\\WebBanHang\\WebBanHang\\WebBanHang\\WebBanHang.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "E:\\WebBanHang\\WebBanHang\\WebBanHang\\obj\\",
+      "outputPath": "E:\\WebBanHang\\WebBanHang\\WebBanHang\\WebBanHang\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11501,7 +11501,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.305\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11566,7 +11566,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }
